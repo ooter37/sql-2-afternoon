@@ -24,7 +24,3 @@ WHERE album_id IN (SELECT album_id FROM album WHERE title = 'Fireball');
 
 -- 6.
 SELECT * FROM track
-WHERE album_id IN (SELECT album_id FROM album WHERE artist_id IN (SELECT artist_id FROM artist WHERE name = 'Queen'));
-
-
-
