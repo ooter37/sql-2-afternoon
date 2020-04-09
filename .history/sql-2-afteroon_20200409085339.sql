@@ -167,12 +167,3 @@ UPDATE orders
 SET user_id = 3 WHERE order_id = 2;
 UPDATE orders
 SET user_id = 2 WHERE order_id = 3;
--- Run queries against your data.
--- Get all orders for a user.
-SELECT * FROM orders
-JOIN users ON orders.user_id = users.user_id
-WHERE users.user_id = 2;
--- Get how many orders each user has.
-SELECT orders.user_id, COUNT(*) FROM orders
-JOIN users ON orders.user_id = users.user_id
-GROUP BY orders.user_id;

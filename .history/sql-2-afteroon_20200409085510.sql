@@ -173,6 +173,3 @@ SELECT * FROM orders
 JOIN users ON orders.user_id = users.user_id
 WHERE users.user_id = 2;
 -- Get how many orders each user has.
-SELECT orders.user_id, COUNT(*) FROM orders
-JOIN users ON orders.user_id = users.user_id
-GROUP BY orders.user_id;
